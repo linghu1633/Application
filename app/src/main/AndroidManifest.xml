@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationDemo">
         <activity android:name=".MainActivity">
+        <!--启动模块,这个在哪个activity下哪个就是第一次APP启动进入的页面  intent-filter-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
