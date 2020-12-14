@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.myapplicationdemo.util.ToastUtil;
+
 import java.time.Instant;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -88,7 +90,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (usermane.equals("123") && password.equals("123456")) {
 
             //tosat普通版
-            Toast.makeText(getApplicationContext(),ok,Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplicationContext(),ok,Toast.LENGTH_SHORT).show();
+
+            ToastUtil.showMsg(getApplicationContext(),ok);
 
             //如果正确跳转页面
             intent = new Intent(MainActivity.this, FunctionActivity.class);
